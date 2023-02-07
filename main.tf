@@ -1,9 +1,5 @@
-#provider block
-provider "aws" {
-  region     = "us-east-1"
-  access_key = "AKIAXZ3PKUV4MWXBZV2P"
-  secret_key = "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"
-}
+
+#resource block
 resource "aws_instance" "windows" {
   ami           = "ami-09e8627bd5d36a4f0"
   instance_type = "t2.micro"
