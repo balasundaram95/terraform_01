@@ -5,6 +5,6 @@ resource "aws_instance" "windows" {
   key_name = "test_chrome"
 
   tags = {
-    Name = "Test_chrome_final"
+    Name = "Test_chrome_final1"
   }
 }
