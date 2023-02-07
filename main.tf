@@ -1,3 +1,9 @@
+#provider block
+provider "aws" {
+  region     = "us-east-1"
+  access_key = "AKIAXZ3PKUV4MWXBZV2P"
+  secret_key = "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"
+}
 
 #resource block
 resource "aws_instance" "windows" {
