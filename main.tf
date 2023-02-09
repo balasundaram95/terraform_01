@@ -57,7 +57,7 @@ terraform {
 
     workspaces {
 
-      prefix = "terra-"
+      prefix = "Terraform-"
 
     }
 
