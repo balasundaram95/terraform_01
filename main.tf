@@ -56,22 +56,7 @@ provider "github" {
 
 # terraform setup
 
-terraform {
 
-  backend "remote" {
-
-    organization = "silcontechlabs-bala"
-
-
-
-
-    workspaces {
-
-      prefix = "terraform_01"
-
-    }
-
-  }
 
 
 
