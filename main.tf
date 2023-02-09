@@ -48,29 +48,21 @@ provider "aws" {
 provider "github" {
 
 
-  token = "TARliuRdKSjFsA.atlasv1.kQ9poIJdE1JTodxQ5NcVlPfTycHW5Qv6pzaZweVUVJAXYR5ptTC1tdn0JIB8H5ZDQHI"
+  token = "iAAj4F7tjwyk0g.atlasv1.wAI04amDYHTD01TqMjLFoy8nyz0iiThaAW82YITqhOLp2GGZkJ4ayox84b78PnbgCUg"
 
 
 
 }
 
 terraform {
-
-  backend "remote" {
-
-    organization = "silcontechlabs-bala"
-
-
-
+  cloud {
+    organization = "silcontechlabs-bala_01"
 
     workspaces {
-
-      prefix = "terraform_01"
-
+      name = "Terraform-prod"
     }
-
   }
-
+}
 
 
 
