@@ -58,7 +58,7 @@ terraform {
 
   backend "remote" {
 
-    organization = "silcontechlabs-bala23"
+    organization = "silcontechlabs-bala"
 
 
 
