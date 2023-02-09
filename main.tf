@@ -45,14 +45,6 @@ provider "aws" {
 
 
 
-provider "github" {
-
-
-  token = "CrX7FnS0vL1XTQ.atlasv1.zDEMctezlygvrcMLYzAPkygLzmUuSE5Skpzy9RkQGyDabrxnOdMa6ZdHNy9dk48KlfI"
-
-
-
-}
 
 terraform {
 
@@ -65,7 +57,7 @@ terraform {
 
     workspaces {
 
-      prefix = "Terraform-prod"
+      prefix = "Terraform-"
 
     }
 
