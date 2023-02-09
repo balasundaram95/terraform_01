@@ -55,6 +55,22 @@ provider "github" {
 }
 
 # terraform setup
+terraform {
+
+  backend "remote" {
+
+    organization = "silcontechlabs"
+
+
+
+
+    workspaces {
+
+      prefix = "buktym-"
+
+    }
+
+  }
 
 
 
