@@ -48,7 +48,7 @@ provider "aws" {
 provider "github" {
 
 
-  token = "iAAj4F7tjwyk0g.atlasv1.wAI04amDYHTD01TqMjLFoy8nyz0iiThaAW82YITqhOLp2GGZkJ4ayox84b78PnbgCUg"
+  token = "CrX7FnS0vL1XTQ.atlasv1.zDEMctezlygvrcMLYzAPkygLzmUuSE5Skpzy9RkQGyDabrxnOdMa6ZdHNy9dk48KlfI"
 
 
 
