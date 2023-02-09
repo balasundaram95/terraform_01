@@ -1,8 +1,82 @@
-#provider block
+terraform {
+
+  required_providers {
+
+    aws = {
+
+      source  = "hashicorp/aws"
+
+      version = "~> 4.0"
+
+    }
+
+    github = {
+
+      source  = "integrations/github"
+
+      version = "~> 5.0"
+
+    }
+
+  }
+
+}
+
+
+
+
 provider "aws" {
+
   region     = "us-east-1"
-  access_key = "AKIAXZ3PKUV4MWXBZV2P"
-  secret_key = "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"
+
+  access_key = var.access
+
+  secret_key = var.secret
+
+}
+
+
+
+
+
+
+
+# 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
+
+
+
+
+provider "github" {
+
+  token = var.token
+
+
+
+
+}
+
+# terraform setup
+
+terraform {
+
+  backend "remote" {
+
+    organization = "silcontechlabs"
+
+
+
+
+    workspaces {
+
+      prefix = "buktym-"
+
+    }
+
+  }
+
+
+
+
 }
 
 #resource block
