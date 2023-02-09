@@ -82,7 +82,7 @@ jobs:
 
       with:
 
-        cli_config_credentials_token: 2QgY7VSSnwqy4Q.atlasv1.dzHdBfF35gBDbdsFfe0y6Tf5BBqyYayvoXeDQYJqfsow49mHxLOsllOtf00tXFjFVPI
+        cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
 
 
 
