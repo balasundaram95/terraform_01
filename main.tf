@@ -29,11 +29,9 @@ provider "aws" {
 
   region     = "us-east-1"
 
-  access_key = var.access
+  access_key = "AKIAXZ3PKUV4MWXBZV2P"
 
-  secret_key = var.secret
-
-}
+  secret_key = "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"
 
 
 
@@ -48,7 +46,7 @@ provider "aws" {
 
 provider "github" {
 
-  token = var.token
+  token = "1aOdEMCmycldeg.atlasv1.OwrapfNqIoPAPFIbAYUwXGfM7wTcba0CKGwJkjJSPHhMgN1xzVUuLSpBcLz5bjjcm8w"
 
 
 
@@ -61,14 +59,14 @@ terraform {
 
   backend "remote" {
 
-    organization = "silcontechlabs"
+    organization = "silcontechlabs-bala"
 
 
 
 
     workspaces {
 
-      prefix = "buktym-"
+      prefix = "terraform_01"
 
     }
 
