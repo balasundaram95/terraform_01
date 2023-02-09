@@ -55,22 +55,14 @@ provider "github" {
 }
 
 terraform {
-
-  backend "remote" {
-
-    organization = "silcontechlabs-balas"
-
-
-
+  cloud {
+    organization = "silcontechlabs-balass1"
 
     workspaces {
-
-      prefix = "terraform2"
-
+      name = "gh-actions-demo"
     }
-
   }
-
+}
 
 
 
